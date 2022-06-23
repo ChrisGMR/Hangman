@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hang Man</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Hang Man</h1>
+        </div>
+        <div class="letters">
+            <button onclick="selected('A'); this.disabled = true; " class="letterbttn"><img src="./images/letters/A.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('B'); this.disabled = true" class="letterbttn"><img src="./images/letters/B.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('C'); this.disabled = true" class="letterbttn"><img src="./images/letters/C.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('D'); this.disabled = true" class="letterbttn"><img src="./images/letters/D.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('E'); this.disabled = true" class="letterbttn"><img src="./images/letters/E.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('F'); this.disabled = true" class="letterbttn"><img src="./images/letters/F.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('G'); this.disabled = true" class="letterbttn"><img src="./images/letters/G.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('H'); this.disabled = true" class="letterbttn"><img src="./images/letters/H.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('I'); this.disabled = true" class="letterbttn"><img src="./images/letters/I.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('J'); this.disabled = true" class="letterbttn"><img src="./images/letters/J.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('K'); this.disabled = true" class="letterbttn"><img src="./images/letters/K.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('L'); this.disabled = true" class="letterbttn"><img src="./images/letters/L.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('M'); this.disabled = true" class="letterbttn"><img src="./images/letters/M.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('N'); this.disabled = true" class="letterbttn"><img src="./images/letters/N.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('O'); this.disabled = true" class="letterbttn"><img src="./images/letters/O.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('P'); this.disabled = true" class="letterbttn"><img src="./images/letters/P.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('Q'); this.disabled = true" class="letterbttn"><img src="./images/letters/Q.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('R'); this.disabled = true" class="letterbttn"><img src="./images/letters/R.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('S'); this.disabled = true" class="letterbttn"><img src="./images/letters/S.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('T'); this.disabled = true" class="letterbttn"><img src="./images/letters/T.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('U'); this.disabled = true" class="letterbttn"><img src="./images/letters/U.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('V'); this.disabled = true" class="letterbttn"><img src="./images/letters/V.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('W'); this.disabled = true" class="letterbttn"><img src="./images/letters/W.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('X'); this.disabled = true" class="letterbttn"><img src="./images/letters/X.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('Y'); this.disabled = true" class="letterbttn"><img src="./images/letters/Y.gif" alt="" class="letterimage"></button>
+            <button onclick="selected('Z'); this.disabled = true" class="letterbttn"><img src="./images/letters/Z.gif" alt="" class="letterimage"></button>
+        </div>
+        <div>
+            <h2>Category</h2>
+            <div id="categories"></div>
+            <div id="hint"></div>
+        </div>
+        <div>
+            <div class="answer">Answer:</div>
+            <div id="answer"></div>
+        </div>
+        <div>
+            <img src="" alt="" id="image" class="animation">
+        </div>
+        <div class="bottomButtonContainer">
+            <button onclick="getHint()" id="hintButton" class="interactable">Hint</button>
+            <button onclick="playAgain()" class="interactable">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
